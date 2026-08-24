@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<a d/
+
+<table>
+<tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Department</th>
+</tr>
+
+{% for emp in employees %}
+<tr>
+    <td>{{ emp.name }}</td>
+    <td>{{ emp.email }}</td>
+    <td>{{ emp.department }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+{% endblock %}
