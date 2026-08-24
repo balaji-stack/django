@@ -2,23 +2,22 @@
 
 {% block content %}
 
-<a d/
+/add/Add Employee</a>
 
 <table>
-<tr>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Department</th>
-</tr>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Department</th>
+    </tr>
 
-{% for emp in employees %}
-<tr>
-    <td>{{ emp.name }}</td>
-    <td>{{ emp.email }}</td>
-    <td>{{ emp.department }}</td>
-</tr>
-{% endfor %}
-
+    {% for emp in employees %}
+    <tr>
+        <td>{{ emp.name }}</td>
+        <td>{{ emp.email }}</td>
+        <td>{{ emp.department }}</td>
+    </tr>
+    {% endfor %}
 </table>
 
 {% endblock %}
